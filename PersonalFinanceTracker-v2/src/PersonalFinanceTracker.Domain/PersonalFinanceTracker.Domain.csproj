@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <!--
+      This project has NO package references, and NO project references.
+      That's intentional: the Domain layer must remain pure.
+      If you're tempted to add a NuGet package here, the code likely belongs in Application or Infrastructure.
+    -->
+  </PropertyGroup>
+
+</Project>
