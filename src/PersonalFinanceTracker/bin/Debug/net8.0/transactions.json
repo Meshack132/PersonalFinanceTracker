@@ -1,0 +1,11 @@
+[
+  {
+    "Id": "09d64bd3-1cb0-49f4-b8e7-878059ec4307",
+    "Date": "2026-07-09T10:48:52.8613386+02:00",
+    "Amount": 400,
+    "Description": "savings",
+    "Category": "Uncategorized",
+    "Type": "Income",
+    "SignedAmount": 400
+  }
+]
