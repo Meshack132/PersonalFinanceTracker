@@ -133,7 +133,9 @@ PersonalFinanceTracker/
 - [ ] Budget forecasting (linear regression on category spend)
 - [ ] Blazor front-end
 - [ ] Docker Compose for local dev with SQL Server
+## Acknowledgments
 
+Built as a portfolio project demonstrating Clean Architecture in C# .NET 8.
 ## License
 
 [MIT](LICENSE)
