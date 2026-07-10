@@ -1,8 +1,11 @@
 <Solution>
   <Folder Name="/src/">
-    <Project Path="src/PersonalFinanceTracker/PersonalFinanceTracker.csproj" />
+    <Project Path="src/PersonalFinanceTracker.Application/PersonalFinanceTracker.Application.csproj" />
+    <Project Path="src/PersonalFinanceTracker.Domain/PersonalFinanceTracker.Domain.csproj" />
+    <Project Path="src/PersonalFinanceTracker.Infrastructure/PersonalFinanceTracker.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/tests/">
-    <Project Path="tests/PersonalFinanceTracker.Tests/PersonalFinanceTracker.Tests.csproj" />
+    <Project Path="tests/PersonalFinanceTracker.Domain.Tests/PersonalFinanceTracker.Domain.Tests.csproj" />
+    <Project Path="tests/PersonalFinanceTracker.Infrastructure.Tests/PersonalFinanceTracker.Infrastructure.Tests.csproj" />
   </Folder>
 </Solution>

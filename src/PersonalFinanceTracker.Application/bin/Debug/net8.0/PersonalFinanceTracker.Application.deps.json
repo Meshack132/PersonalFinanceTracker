@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PersonalFinanceTracker.Application/1.0.0": {
+        "dependencies": {
+          "PersonalFinanceTracker.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PersonalFinanceTracker.Application.dll": {}
+        }
+      },
+      "PersonalFinanceTracker.Domain/1.0.0": {
+        "runtime": {
+          "PersonalFinanceTracker.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PersonalFinanceTracker.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PersonalFinanceTracker.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
