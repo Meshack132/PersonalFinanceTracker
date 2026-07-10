@@ -134,6 +134,9 @@ PersonalFinanceTracker/
 - [ ] Blazor front-end
 - [ ] Docker Compose for local dev with SQL Server
 
+
+<!-- Continuous improvement in progress. -->
+
 ## License
 
 [MIT](LICENSE)
