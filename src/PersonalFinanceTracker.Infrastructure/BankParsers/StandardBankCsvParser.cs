@@ -43,7 +43,9 @@ public class StandardBankCsvParser : IBankStatementParser
 
             var normalized = header.ToLowerInvariant();
             return RequiredHeaders.All(h => normalized.Contains(h))
-                   && normalized.Contains("balance");  // Standard Bank always includes running balance
+                   && normalized.Contains("balance")
+                   && !normalized.Contains("accrued")   // exclude FNB, which has this extra column
+                   && !(normalized.Contains("debit") && normalized.Contains("credit")); // exclude Capitec's split columns
         }
         finally
         {
@@ -199,3 +201,4 @@ public class StandardBankCsvParser : IBankStatementParser
 
     private readonly record struct ColumnMap(int DateIdx, int DescriptionIdx, int AmountIdx, int BalanceIdx);
 }
+
