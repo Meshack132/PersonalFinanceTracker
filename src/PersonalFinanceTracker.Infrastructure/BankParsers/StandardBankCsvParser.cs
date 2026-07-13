@@ -20,6 +20,12 @@ namespace PersonalFinanceTracker.Infrastructure.BankParsers;
 /// - Header rows repeat "Balance brought forward" / "Balance carried forward" on each page —
 ///   these are stripped
 /// - Some exports include quoted fields with embedded commas
+///
+/// Format-detection note: Standard Bank's header (Date/Description/Amount/Balance) is a
+/// *subset* of FNB's header, which adds an extra "Accrued Charges" column. Without an
+/// exclusion check, this parser would greedily claim FNB files too if registered first
+/// in the factory — CanParse explicitly rules out FNB's and Capitec's signature columns
+/// so format detection doesn't depend on registration order.
 /// </summary>
 public class StandardBankCsvParser : IBankStatementParser
 {
@@ -43,7 +49,9 @@ public class StandardBankCsvParser : IBankStatementParser
 
             var normalized = header.ToLowerInvariant();
             return RequiredHeaders.All(h => normalized.Contains(h))
-                   && normalized.Contains("balance");  // Standard Bank always includes running balance
+                   && normalized.Contains("balance")
+                   && !normalized.Contains("accrued")   // exclude FNB, which has this extra column
+                   && !(normalized.Contains("debit") && normalized.Contains("credit")); // exclude Capitec's split columns
         }
         finally
         {

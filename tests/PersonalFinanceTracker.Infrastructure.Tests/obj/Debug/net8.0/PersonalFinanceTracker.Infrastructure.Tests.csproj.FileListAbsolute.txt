@@ -110,6 +110,7 @@ C:\Users\e1009615\source\repos\PersonalFinanceTracker\tests\PersonalFinanceTrack
 C:\Users\e1009615\source\repos\PersonalFinanceTracker\tests\PersonalFinanceTracker.Infrastructure.Tests\obj\Debug\net8.0\PersonalFinanceTracker.Infrastructure.Tests.pdb
 C:\Users\e1009615\source\repos\PersonalFinanceTracker\tests\PersonalFinanceTracker.Infrastructure.Tests\obj\Debug\net8.0\PersonalFinanceTracker.Infrastructure.Tests.genruntimeconfig.cache
 C:\Users\e1009615\source\repos\PersonalFinanceTracker\tests\PersonalFinanceTracker.Infrastructure.Tests\obj\Debug\net8.0\ref\PersonalFinanceTracker.Infrastructure.Tests.dll
+<<<<<<< HEAD
 C:\Users\e1009615\source\repos\PersonalFinanceTracker\tests\PersonalFinanceTracker.Infrastructure.Tests\bin\Debug\net8.0\Microsoft.Data.Sqlite.dll
 C:\Users\e1009615\source\repos\PersonalFinanceTracker\tests\PersonalFinanceTracker.Infrastructure.Tests\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\e1009615\source\repos\PersonalFinanceTracker\tests\PersonalFinanceTracker.Infrastructure.Tests\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -148,3 +149,7 @@ C:\Users\e1009615\source\repos\PersonalFinanceTracker\tests\PersonalFinanceTrack
 C:\Users\e1009615\source\repos\PersonalFinanceTracker\tests\PersonalFinanceTracker.Infrastructure.Tests\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\e1009615\source\repos\PersonalFinanceTracker\tests\PersonalFinanceTracker.Infrastructure.Tests\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\e1009615\source\repos\PersonalFinanceTracker\tests\PersonalFinanceTracker.Infrastructure.Tests\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+=======
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\tests\PersonalFinanceTracker.Infrastructure.Tests\bin\Debug\net8.0\BankParsers\testdata\capitec-sample.csv
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\tests\PersonalFinanceTracker.Infrastructure.Tests\bin\Debug\net8.0\BankParsers\testdata\fnb-sample.csv
+>>>>>>> origin/main
