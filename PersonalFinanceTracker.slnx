@@ -4,6 +4,7 @@
     <Project Path="src/PersonalFinanceTracker.Console/PersonalFinanceTracker.Console.csproj" />
     <Project Path="src/PersonalFinanceTracker.Domain/PersonalFinanceTracker.Domain.csproj" />
     <Project Path="src/PersonalFinanceTracker.Infrastructure/PersonalFinanceTracker.Infrastructure.csproj" />
+    <Project Path="src/PersonalFinanceTracker.Web/PersonalFinanceTracker.Web.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/PersonalFinanceTracker.Domain.Tests/PersonalFinanceTracker.Domain.Tests.csproj" />

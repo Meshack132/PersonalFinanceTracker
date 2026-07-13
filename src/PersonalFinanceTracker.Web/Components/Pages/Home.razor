@@ -1,0 +1,70 @@
+@page "/"
+@rendermode InteractiveServer
+@inject ITransactionRepository Repository
+
+<PageTitle>Dashboard — Personal Finance Tracker</PageTitle>
+
+<h1>Dashboard</h1>
+
+@if (_loading)
+{
+    <p><em>Loading…</em></p>
+}
+else if (_transactionCount == 0)
+{
+    <div class="alert alert-info">
+        No transactions yet. <a href="import">Import a bank statement</a> to get started —
+        or try the included sample: <code>samples/standardbank-sample.csv</code>.
+    </div>
+}
+else
+{
+    <div class="row g-3 mb-4">
+        <div class="col-md-4">
+            <div class="card text-bg-success">
+                <div class="card-body">
+                    <h6 class="card-title">Income</h6>
+                    <p class="card-text fs-4">R @_income.ToString("N2")</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-bg-danger">
+                <div class="card-body">
+                    <h6 class="card-title">Expenses</h6>
+                    <p class="card-text fs-4">R @_expenses.ToString("N2")</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card @(_balance >= 0 ? "text-bg-primary" : "text-bg-warning")">
+                <div class="card-body">
+                    <h6 class="card-title">Balance</h6>
+                    <p class="card-text fs-4">R @_balance.ToString("N2")</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-muted">@_transactionCount transaction(s) tracked. See the <a href="sars">SARS Summary</a> for potential deductions.</p>
+}
+
+@code {
+    private bool _loading = true;
+    private int _transactionCount;
+    private decimal _income;
+    private decimal _expenses;
+    private decimal _balance;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var transactions = (await Repository.GetAllAsync()).ToList();
+
+        _transactionCount = transactions.Count;
+        _income = transactions.Where(t => t.Type == TransactionType.Income).Sum(t => t.Amount.Amount);
+        _expenses = transactions.Where(t => t.Type == TransactionType.Expense).Sum(t => t.Amount.Amount);
+        _balance = _income - _expenses;
+
+        _loading = false;
+    }
+}

@@ -5,6 +5,7 @@ using PersonalFinanceTracker.Application.Abstractions;
 using PersonalFinanceTracker.Application.UseCases;
 using PersonalFinanceTracker.Console.UI;
 using PersonalFinanceTracker.Infrastructure.BankParsers;
+using PersonalFinanceTracker.Infrastructure.Persistence;
 using PersonalFinanceTracker.Infrastructure.Categorization;
 using PersonalFinanceTracker.Infrastructure.Ocr;
 using PersonalFinanceTracker.Infrastructure.Persistence;
@@ -37,8 +38,6 @@ public static class Program
 
         // ── Bank parsers (Strategy pattern) ────────────────────────────
         services.AddSingleton<IBankStatementParser, StandardBankCsvParser>();
-        services.AddSingleton<IBankStatementParser, FnbCsvParser>();
-        services.AddSingleton<IBankStatementParser, CapitecCsvParser>();
         services.AddSingleton<IBankParserFactory, BankParserFactory>();
 
         // ── Categorization rules (Chain of Responsibility, order matters) ──

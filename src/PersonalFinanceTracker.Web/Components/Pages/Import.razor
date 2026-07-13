@@ -1,0 +1,88 @@
+@page "/import"
+@rendermode InteractiveServer
+@inject ImportBankStatementUseCase ImportUseCase
+@inject IBankParserFactory ParserFactory
+
+<PageTitle>Import Statement — Personal Finance Tracker</PageTitle>
+
+<h1>Import a Bank Statement</h1>
+
+<p class="text-muted">
+    Supported banks: @string.Join(", ", ParserFactory.SupportedBanks())
+</p>
+
+<div class="mb-3">
+    <InputFile OnChange="OnFileSelected" class="form-control" accept=".csv" />
+</div>
+
+@if (_isProcessing)
+{
+    <div class="alert alert-secondary">Processing…</div>
+}
+else if (_resultMessage is not null)
+{
+    <div class="alert @(_wasSuccess ? "alert-success" : "alert-danger")">
+        @_resultMessage
+    </div>
+}
+
+<div class="mt-4">
+    <h6>Don't have a statement handy?</h6>
+    <p class="text-muted">
+        Try the sample files bundled with this repo:
+        <code>samples/standardbank-sample.csv</code>,
+        <code>samples/fnb-sample.csv</code>,
+        <code>samples/capitec-sample.csv</code>
+    </p>
+</div>
+
+@code {
+    private bool _isProcessing;
+    private bool _wasSuccess;
+    private string? _resultMessage;
+
+    private const long MaxFileSizeBytes = 5 * 1024 * 1024; // 5 MB
+
+    private async Task OnFileSelected(InputFileChangeEventArgs e)
+    {
+        _isProcessing = true;
+        _resultMessage = null;
+        StateHasChanged();
+
+        try
+        {
+            // IBrowserFile's stream isn't guaranteed seekable, but our parsers need
+            // to reset Position while sniffing the format — copy into a MemoryStream first.
+            await using var browserStream = e.File.OpenReadStream(MaxFileSizeBytes);
+            using var buffer = new MemoryStream();
+            await browserStream.CopyToAsync(buffer);
+            buffer.Position = 0;
+
+            var result = await ImportUseCase.ExecuteAsync(buffer);
+
+            if (result.IsFailure)
+            {
+                _wasSuccess = false;
+                _resultMessage = $"Import failed: {result.Error}";
+            }
+            else
+            {
+                var summary = result.Value!;
+                _wasSuccess = true;
+                _resultMessage =
+                    $"✔ Imported from {summary.BankName}: {summary.NewTransactionsImported} new, " +
+                    $"{summary.DuplicatesSkipped} duplicates skipped ({summary.TotalRowsParsed} rows total).";
+            }
+        }
+        catch (Exception ex)
+        {
+            _wasSuccess = false;
+            _resultMessage = $"Unexpected error: {ex.Message}";
+        }
+        finally
+        {
+            _isProcessing = false;
+            StateHasChanged();
+        }
+    }
+}

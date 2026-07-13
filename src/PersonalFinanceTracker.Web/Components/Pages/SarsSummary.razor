@@ -1,0 +1,84 @@
+@page "/sars"
+@rendermode InteractiveServer
+@inject ITransactionRepository Repository
+
+<PageTitle>SARS Summary — Personal Finance Tracker</PageTitle>
+
+<h1>SARS Deduction Summary</h1>
+<p class="text-muted">
+    Potential deductions grouped by Income Tax Act section. This is a helper, not tax
+    advice — verify with a registered tax practitioner before filing.
+</p>
+
+@if (_loading)
+{
+    <p><em>Loading…</em></p>
+}
+else if (_rows.Count == 0)
+{
+    <div class="alert alert-info">
+        No deductible transactions found yet. <a href="import">Import a statement</a> first.
+    </div>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th class="text-end">Amount</th>
+                <th class="text-end">Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var row in _rows)
+            {
+                <tr>
+                    <td>@row.Label</td>
+                    <td class="text-end">R @row.Total.ToString("N2")</td>
+                    <td class="text-end">@row.Count</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr class="table-info fw-bold">
+                <td>Total potentially deductible</td>
+                <td class="text-end">R @_rows.Sum(r => r.Total).ToString("N2")</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+}
+
+@code {
+    private bool _loading = true;
+    private List<SummaryRow> _rows = new();
+
+    private record SummaryRow(string Label, decimal Total, int Count);
+
+    protected override async Task OnInitializedAsync()
+    {
+        var all = (await Repository.GetAllAsync()).ToList();
+
+        _rows = all
+            .Where(t => t.TaxCategory != TaxCategory.NotApplicable)
+            .GroupBy(t => t.TaxCategory)
+            .Select(g => new SummaryRow(FriendlyName(g.Key), g.Sum(t => t.Amount.Amount), g.Count()))
+            .OrderByDescending(r => r.Total)
+            .ToList();
+
+        _loading = false;
+    }
+
+    private static string FriendlyName(TaxCategory category) => category switch
+    {
+        TaxCategory.RetirementContribution => "Retirement contributions (Section 11F)",
+        TaxCategory.MedicalSchemeFees      => "Medical scheme fees (Section 6A)",
+        TaxCategory.MedicalOutOfPocket     => "Additional medical expenses (Section 6B)",
+        TaxCategory.CharitableDonation     => "Donations to PBOs (Section 18A)",
+        TaxCategory.HomeOffice             => "Home office expenses",
+        TaxCategory.BusinessTravel         => "Business travel",
+        TaxCategory.SolarInstallation      => "Solar installation (Section 12BA)",
+        _                                   => category.ToString()
+    };
+}

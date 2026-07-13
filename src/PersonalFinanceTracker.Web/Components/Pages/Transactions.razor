@@ -1,0 +1,65 @@
+@page "/transactions"
+@rendermode InteractiveServer
+@inject ITransactionRepository Repository
+
+<PageTitle>Transactions — Personal Finance Tracker</PageTitle>
+
+<h1>Transactions</h1>
+
+@if (_loading)
+{
+    <p><em>Loading…</em></p>
+}
+else if (_transactions.Count == 0)
+{
+    <div class="alert alert-info">
+        No transactions yet. <a href="import">Import a bank statement</a> to get started.
+    </div>
+}
+else
+{
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Bank</th>
+                <th class="text-end">Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var t in _transactions)
+            {
+                <tr>
+                    <td>@t.Date.ToString("yyyy-MM-dd")</td>
+                    <td>@t.Description</td>
+                    <td>
+                        @t.Category
+                        @if (t.TaxCategory != TaxCategory.NotApplicable)
+                        {
+                            <span class="badge bg-info text-dark ms-1">@t.TaxCategory</span>
+                        }
+                    </td>
+                    <td>@(t.SourceBank ?? "—")</td>
+                    <td class="text-end @(t.Type == TransactionType.Income ? "text-success" : "text-danger")">
+                        @(t.Type == TransactionType.Income ? "+" : "-")R @t.Amount.Amount.ToString("N2")
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private bool _loading = true;
+    private List<Transaction> _transactions = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _transactions = (await Repository.GetAllAsync())
+            .OrderByDescending(t => t.Date)
+            .ToList();
+        _loading = false;
+    }
+}
