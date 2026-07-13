@@ -1,0 +1,172 @@
+[
+  {
+    "Id": "cb759d8a-e15f-4318-ba5a-c7979450b99a",
+    "Date": "2025-01-03T00:00:00",
+    "Amount": {
+      "Amount": 25000.00,
+      "Currency": "ZAR",
+      "IsNegative": false,
+      "IsPositive": true,
+      "IsZero": false
+    },
+    "Description": "SALARY XYZ COMPANY",
+    "Category": "Salary",
+    "Type": "Income",
+    "TaxCategory": "NotApplicable",
+    "SourceBank": "Standard Bank",
+    "DedupeKey": "20250103|25000.00|salary xyz company"
+  },
+  {
+    "Id": "3a905873-ea2f-4cff-9d41-484a6841c63b",
+    "Date": "2025-01-04T00:00:00",
+    "Amount": {
+      "Amount": 4500.00,
+      "Currency": "ZAR",
+      "IsNegative": false,
+      "IsPositive": true,
+      "IsZero": false
+    },
+    "Description": "DISCOVERY HEALTH DEBIT ORDER",
+    "Category": "Medical Aid",
+    "Type": "Expense",
+    "TaxCategory": "MedicalSchemeFees",
+    "SourceBank": "Standard Bank",
+    "DedupeKey": "20250104|4500.00|discovery health debit order"
+  },
+  {
+    "Id": "2863f53a-afe8-4a79-9e33-ad52c82e7689",
+    "Date": "2025-01-05T00:00:00",
+    "Amount": {
+      "Amount": 1250.75,
+      "Currency": "ZAR",
+      "IsNegative": false,
+      "IsPositive": true,
+      "IsZero": false
+    },
+    "Description": "CHECKERS SANDTON CITY",
+    "Category": "Groceries",
+    "Type": "Expense",
+    "TaxCategory": "PersonalExpense",
+    "SourceBank": "Standard Bank",
+    "DedupeKey": "20250105|1250.75|checkers sandton city"
+  },
+  {
+    "Id": "4a8c2090-6477-494e-b6fc-f5042a7a88f8",
+    "Date": "2025-01-07T00:00:00",
+    "Amount": {
+      "Amount": 850.00,
+      "Currency": "ZAR",
+      "IsNegative": false,
+      "IsPositive": true,
+      "IsZero": false
+    },
+    "Description": "ENGEN 1 STOP KILLARNEY",
+    "Category": "Fuel",
+    "Type": "Expense",
+    "TaxCategory": "PersonalExpense",
+    "SourceBank": "Standard Bank",
+    "DedupeKey": "20250107|850.00|engen 1 stop killarney"
+  },
+  {
+    "Id": "a57e2de4-411f-4cf6-9e90-d8018133a209",
+    "Date": "2025-01-10T00:00:00",
+    "Amount": {
+      "Amount": 320.50,
+      "Currency": "ZAR",
+      "IsNegative": false,
+      "IsPositive": true,
+      "IsZero": false
+    },
+    "Description": "UBER TRIP HOME",
+    "Category": "Transport",
+    "Type": "Expense",
+    "TaxCategory": "PersonalExpense",
+    "SourceBank": "Standard Bank",
+    "DedupeKey": "20250110|320.50|uber trip home"
+  },
+  {
+    "Id": "0677ffc2-6996-4905-9180-65b59639b12f",
+    "Date": "2025-01-12T00:00:00",
+    "Amount": {
+      "Amount": 3000.00,
+      "Currency": "ZAR",
+      "IsNegative": false,
+      "IsPositive": true,
+      "IsZero": false
+    },
+    "Description": "10X RETIREMENT ANNUITY",
+    "Category": "Retirement Annuity",
+    "Type": "Expense",
+    "TaxCategory": "RetirementContribution",
+    "SourceBank": "Standard Bank",
+    "DedupeKey": "20250112|3000.00|10x retirement annuity"
+  },
+  {
+    "Id": "e268ab19-5c3a-4004-bfa1-5c70973742fe",
+    "Date": "2025-01-15T00:00:00",
+    "Amount": {
+      "Amount": 800.00,
+      "Currency": "ZAR",
+      "IsNegative": false,
+      "IsPositive": true,
+      "IsZero": false
+    },
+    "Description": "ESKOM PREPAID ELECTRICITY",
+    "Category": "Utilities",
+    "Type": "Expense",
+    "TaxCategory": "PersonalExpense",
+    "SourceBank": "Standard Bank",
+    "DedupeKey": "20250115|800.00|eskom prepaid electricity"
+  },
+  {
+    "Id": "b23c935f-2357-4885-a825-fc28b0458e3a",
+    "Date": "2025-01-18T00:00:00",
+    "Amount": {
+      "Amount": 500.00,
+      "Currency": "ZAR",
+      "IsNegative": false,
+      "IsPositive": true,
+      "IsZero": false
+    },
+    "Description": "GIFT OF THE GIVERS DONATION",
+    "Category": "Charitable Donation",
+    "Type": "Expense",
+    "TaxCategory": "CharitableDonation",
+    "SourceBank": "Standard Bank",
+    "DedupeKey": "20250118|500.00|gift of the givers donation"
+  },
+  {
+    "Id": "d51fdb79-4304-403f-98aa-7754335eec4e",
+    "Date": "2025-01-20T00:00:00",
+    "Amount": {
+      "Amount": 115.00,
+      "Currency": "ZAR",
+      "IsNegative": false,
+      "IsPositive": true,
+      "IsZero": false
+    },
+    "Description": "MONTHLY SERVICE FEE",
+    "Category": "Banking Fees",
+    "Type": "Expense",
+    "TaxCategory": "PersonalExpense",
+    "SourceBank": "Standard Bank",
+    "DedupeKey": "20250120|115.00|monthly service fee"
+  },
+  {
+    "Id": "b993dfef-dd1e-4d82-83a7-deacb9488b5b",
+    "Date": "2025-01-25T00:00:00",
+    "Amount": {
+      "Amount": 2000.00,
+      "Currency": "ZAR",
+      "IsNegative": false,
+      "IsPositive": true,
+      "IsZero": false
+    },
+    "Description": "EASYEQUITIES DEPOSIT",
+    "Category": "Investment",
+    "Type": "Expense",
+    "TaxCategory": "PersonalExpense",
+    "SourceBank": "Standard Bank",
+    "DedupeKey": "20250125|2000.00|easyequities deposit"
+  }
+]

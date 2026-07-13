@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/src/">
     <Project Path="src/PersonalFinanceTracker.Application/PersonalFinanceTracker.Application.csproj" />
+    <Project Path="src/PersonalFinanceTracker.Console/PersonalFinanceTracker.Console.csproj" />
     <Project Path="src/PersonalFinanceTracker.Domain/PersonalFinanceTracker.Domain.csproj" />
     <Project Path="src/PersonalFinanceTracker.Infrastructure/PersonalFinanceTracker.Infrastructure.csproj" />
   </Folder>
