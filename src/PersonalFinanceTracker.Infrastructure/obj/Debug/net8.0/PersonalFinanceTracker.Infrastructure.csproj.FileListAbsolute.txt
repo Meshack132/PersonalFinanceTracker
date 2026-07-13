@@ -16,3 +16,5 @@ C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker
 C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Infrastructure\obj\Debug\net8.0\refint\PersonalFinanceTracker.Infrastructure.dll
 C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Infrastructure\obj\Debug\net8.0\PersonalFinanceTracker.Infrastructure.pdb
 C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Infrastructure\obj\Debug\net8.0\ref\PersonalFinanceTracker.Infrastructure.dll
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Infrastructure\bin\Debug\net8.0\PersonalFinanceTracker.Infrastructure.runtimeconfig.json
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Infrastructure\obj\Debug\net8.0\PersonalFinanceTracker.Infrastructure.genruntimeconfig.cache

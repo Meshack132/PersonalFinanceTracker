@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
     "net8.0": {
       "PersonalFinanceTracker.Domain/1.0.0": {
@@ -57,7 +57,6 @@
       },
       "frameworks": {
         "net8.0": {
-          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
             "C:\\Users\\e1009615\\source\\repos\\PersonalFinanceTracker\\src\\PersonalFinanceTracker.Domain\\PersonalFinanceTracker.Domain.csproj": {
@@ -81,7 +80,6 @@
     },
     "frameworks": {
       "net8.0": {
-        "framework": "net8.0",
         "targetAlias": "net8.0",
         "imports": [
           "net461",
