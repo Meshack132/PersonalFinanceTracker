@@ -1,0 +1,16 @@
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\bin\Release\net8.0\PersonalFinanceTracker.Application.deps.json
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\bin\Release\net8.0\PersonalFinanceTracker.Application.dll
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\bin\Release\net8.0\PersonalFinanceTracker.Application.pdb
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\bin\Release\net8.0\PersonalFinanceTracker.Domain.dll
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\bin\Release\net8.0\PersonalFinanceTracker.Domain.pdb
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\obj\Release\net8.0\PersonalFinanceTracker.Application.csproj.AssemblyReference.cache
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\obj\Release\net8.0\PersonalFinanceTracker.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\obj\Release\net8.0\PersonalFinanceTracker.Application.AssemblyInfoInputs.cache
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\obj\Release\net8.0\PersonalFinanceTracker.Application.AssemblyInfo.cs
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\obj\Release\net8.0\PersonalFinanceTracker.Application.csproj.CoreCompileInputs.cache
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\obj\Release\net8.0\PersonalFinanceTracker.Application.sourcelink.json
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\obj\Release\net8.0\Personal.45244EB6.Up2Date
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\obj\Release\net8.0\PersonalFinanceTracker.Application.dll
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\obj\Release\net8.0\refint\PersonalFinanceTracker.Application.dll
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\obj\Release\net8.0\PersonalFinanceTracker.Application.pdb
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Application\obj\Release\net8.0\ref\PersonalFinanceTracker.Application.dll

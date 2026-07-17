@@ -8,7 +8,6 @@ using PersonalFinanceTracker.Infrastructure.BankParsers;
 using PersonalFinanceTracker.Infrastructure.Persistence;
 using PersonalFinanceTracker.Infrastructure.Categorization;
 using PersonalFinanceTracker.Infrastructure.Ocr;
-using PersonalFinanceTracker.Infrastructure.Persistence;
 
 namespace PersonalFinanceTracker.Console;
 
@@ -75,4 +74,3 @@ public static class Program
         services.AddSingleton<ConsoleMenu>();
     }
 }
-

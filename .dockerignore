@@ -1,0 +1,11 @@
+bin/
+obj/
+.vs/
+.git/
+.github/
+tests/
+docs/
+*.md
+NuGet.config
+transactions.json
+*.db

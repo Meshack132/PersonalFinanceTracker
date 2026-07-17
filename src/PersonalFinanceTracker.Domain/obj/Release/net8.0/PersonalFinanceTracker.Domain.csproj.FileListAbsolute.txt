@@ -1,0 +1,12 @@
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Domain\bin\Release\net8.0\PersonalFinanceTracker.Domain.deps.json
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Domain\bin\Release\net8.0\PersonalFinanceTracker.Domain.dll
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Domain\bin\Release\net8.0\PersonalFinanceTracker.Domain.pdb
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Domain\obj\Release\net8.0\PersonalFinanceTracker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Domain\obj\Release\net8.0\PersonalFinanceTracker.Domain.AssemblyInfoInputs.cache
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Domain\obj\Release\net8.0\PersonalFinanceTracker.Domain.AssemblyInfo.cs
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Domain\obj\Release\net8.0\PersonalFinanceTracker.Domain.csproj.CoreCompileInputs.cache
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Domain\obj\Release\net8.0\PersonalFinanceTracker.Domain.sourcelink.json
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Domain\obj\Release\net8.0\PersonalFinanceTracker.Domain.dll
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Domain\obj\Release\net8.0\refint\PersonalFinanceTracker.Domain.dll
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Domain\obj\Release\net8.0\PersonalFinanceTracker.Domain.pdb
+C:\Users\e1009615\source\repos\PersonalFinanceTracker\src\PersonalFinanceTracker.Domain\obj\Release\net8.0\ref\PersonalFinanceTracker.Domain.dll
