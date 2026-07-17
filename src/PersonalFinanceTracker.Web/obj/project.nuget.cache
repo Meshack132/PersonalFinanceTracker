@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "boT90oo3tzw=",
+  "dgSpecHash": "jtM0tWwai5s=",
   "success": true,
   "projectFilePath": "C:\\Users\\e1009615\\source\\repos\\PersonalFinanceTracker\\src\\PersonalFinanceTracker.Web\\PersonalFinanceTracker.Web.csproj",
   "expectedPackageFiles": [
@@ -36,8 +36,8 @@
     "C:\\Users\\e1009615\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
     "C:\\Users\\e1009615\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\e1009615\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\e1009615\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.27\\microsoft.netcore.app.ref.8.0.27.nupkg.sha512",
     "C:\\Users\\e1009615\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.27\\microsoft.windowsdesktop.app.ref.8.0.27.nupkg.sha512",
+    "C:\\Users\\e1009615\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.27\\microsoft.netcore.app.ref.8.0.27.nupkg.sha512",
     "C:\\Users\\e1009615\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.27\\microsoft.aspnetcore.app.ref.8.0.27.nupkg.sha512",
     "C:\\Users\\e1009615\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.27\\microsoft.netcore.app.host.win-x64.8.0.27.nupkg.sha512"
   ],

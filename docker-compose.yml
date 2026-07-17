@@ -1,0 +1,17 @@
+services:
+  financetracker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      # Set these to enable real Azure OCR instead of the mock service:
+      # - Azure__FormRecognizer__Endpoint=https://<your-resource>.cognitiveservices.azure.com/
+      # - Azure__FormRecognizer__ApiKey=<your-key>
+    volumes:
+      - financetracker-data:/app/data
+
+volumes:
+  financetracker-data:
